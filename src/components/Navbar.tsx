@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import { FaUserPlus, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   const { data: session }: any = useSession();
@@ -12,17 +13,19 @@ const Navbar = () => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <ul className="flex gap-10">
+          <ul className="flex gap-10 justify-end">
             <li>
               <Link href="/dashboard">Dashboard</Link>
             </li>
             {!session ? (
               <>
-                <li>
+                <li className="flex justify-center items-center gap-2">
+                  <FaArrowRight />
                   <Link href="/login">Login</Link>
                 </li>
-                <li>
-                  <Link href="/register">Register</Link>
+                <li className="flex justify-center items-center gap-2">
+                  <FaUserPlus />
+                  <Link href="/register">Sign Up</Link>
                 </li>
               </>
             ) : (

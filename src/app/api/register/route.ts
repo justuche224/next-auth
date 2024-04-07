@@ -1,8 +1,6 @@
 import User from "@/models/User";
 import connect from "@/utils/db";
 import bcrypt from "bcryptjs";
-// import nodemailer from "nodemailer";
-// import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 import Mailgun from "mailgun.js";
 import FormData, { from } from "form-data";
