@@ -22,7 +22,7 @@ This project provides a secure and robust foundation for building backend applic
 1. Clone this repository:
 
    ```bash
-   git clone [https://github.com/justuche224/next-auth.git](https://github.com/justuche224/next-auth.git)
+   git clone https://github.com/justuche224/next-auth.git
 
    ```
 
