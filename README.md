@@ -7,7 +7,7 @@ This project provides a secure and robust foundation for building backend applic
 ## Features
 
 - User registration with email and password (including account activation via email link)
-- OAuth login providers (Google and Github)
+- OAuth login providers (Google, Github, and more )
 - Secure password hashing with MongoDB storage for enhanced security
 - Forgot password functionality with recovery link sent via email for user convenience
 
@@ -22,7 +22,7 @@ This project provides a secure and robust foundation for building backend applic
 1. Clone this repository:
 
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone [https://github.com/justuche224/next-auth.git](https://github.com/justuche224/next-auth.git)
 
    ```
 
@@ -44,8 +44,8 @@ This project provides a secure and robust foundation for building backend applic
 | `NEXTAUTH_URL`          | Your application URL                                                   |
 | `NEXTAUTH_URL_INTERNAL` | Your internal application URL (optional)                               |
 | `NEXTAUTH_SECRET`       | A secret key used for authentication                                   |
-| `GITHUB_ID`             | Your GitHub client ID                                                  |
-| `GITHUB_SECRET`         | Your GitHub client secret                                              |
+| `GITHUB_ID`             | Your GitHub client ID (if you want sign in with github)                |
+| `GITHUB_SECRET`         | Your GitHub client secret (if you want sign in with github)            |
 | `EMAIL_USERNAME`        | Username for the email account used for sending emails (if applicable) |
 | `EMAIL_PASSWORD`        | Password for the email account used for sending emails (if applicable) |
 | `CLIENT_URL`            | Your client application URL                                            |
